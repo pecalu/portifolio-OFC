@@ -1,0 +1,13 @@
+                    --EMPRESA--
+HEADER
+    logo da empresa
+    link pro apk
+    link sobre nós
+
+BODY
+    Nossa historia
+    carrosel com fotos e descrição do grupo
+    sobre nós
+        -visões da empresa
+        -objetivos
+    nossos produtos
