@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: #212121 ;
+    --cor-secundaria: #b0b0b0 ;
+    --cor-terciaria: #FFEB3B  ;
+
+    --cor-hover: #0f0f0f ;
+
+    --fonte-primario: "Krona One", sans-serif;
+    --fonte-seundaria: "Montserrat", sans-serif;
+
+    --altura-mobile: 525px;
+    --largura-mobile: 258px;
+
+    --altura-web: 283px;
+    --largura-web: 425px;
+
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria); 
+    box-sizing: border-box;
+}
+strong{
+    color: var(--cor-terciaria);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.apresentacao{
+    display: flex;   
+    padding: 5% 15%;
+    gap: 10vh;
+}
+.apresentacao__conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+    text-align: justify;
+}
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: var(--fonte-primario);
+}
+.apresentacao__conteudo__texto{
+    font-size: 24px;
+    font-family: var(--fonte-seundaria);
+}
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.apresentacao__links__botoes{
+    background-color: var(--cor-primaria);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    padding: 21.5px 0; /* o primeiro valor é para o vertical e o segundo horizontal*/
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-seundaria);
+    font-weight: 600;
+    border: 2px solid var(--cor-terciaria);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.apresentacao__links__botoes:hover{
+    color: whitesmoke;
+    background-color: var(--cor-hover);
+}
+
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte-primario);
+    font-weight: 400;
+    font-size: 24px;
+}
+.rodape{
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 30px;
+    text-align: center;
+    font-family: var(--fonte-seundaria);
+    font-size: 24px;
+    font-weight: 400;
+}   
+
+.cabecalho__menu__link, .cabecalho__menu__link-home, .cabecalho__menu__link-projeto, .cabecalho__menu__link-sobre, .cabecalho__menu__link-tecnologias{
+    color: var(--cor-terciaria);
+    font-weight: 600;
+    font-size: 24px;
+    font-family: var(--fonte-seundaria);
+    text-decoration: none;
+}
+
+.cabecalho__menu__link-home, .cabecalho__menu__link-projeto, .cabecalho__menu__link-sobre, .cabecalho__menu__link-tecnologias{
+    border-bottom: 2px solid #FFEB3B;
+}
+
+.cabecalho{
+    padding: 2%  0% 2% 15%;
+    border-bottom: 2px solid #333;
+    border-top: 2px solid orange;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.apresentacao-projetos__projetos-web{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+.apresentacao-projetos__projetos-web__ilustracao-tcc, .apresentacao-projetos__projetos-web__ilustracao-login{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.6s ease-in-out;
+}
+
+.apresentacao-projetos__projetos-web__ilustracao-tcc:hover, .apresentacao-projetos__projetos-web__ilustracao-login:hover{
+    transform: scale(1.1);
+}
+
+
+.apresentacao-projetos__projetos-mobile__ilustracao__mobileIMG{
+    width: var(--largura-mobile);
+    height: var(--altura-mobile);
+    z-index: 1;
+    position: absolute;
+    border-radius: 30px;
+    margin-top: 2vh;
+}
+.apresentacao-projetos__projetos-mobile{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+    margin-bottom: 60px;
+}
+
+.apresentacao-projetos__projetos-mobile__ilustracao-sympla{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: top;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+
+.apresentacao-projetos__projetos-mobile__ilustracao-sympla:hover{
+    transform: scale(1.1);
+}
+
+.apresentacao__foto-perfil{
+    width: 400px;
+    height: 249px ;
+}
+
+.apresentacao-projetos__projetos-mobile__ilustracao__titulo, .apresentacao-projetos__projetos-web__ilustracao__titulo{
+    font-size:20px ;
+    font-family: "Roboto", serif;
+}
+
+.apresentacao-projetos__projetos-web__click, .apresentacao-projetos__projetos-mobile__click{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    
+}
+
+.apresentacao-projetos__projetos-web__ilustracao__sitesMP4{
+    width: var(--largura-web);
+    height: var(--altura-web);
+    display: none;
+    border-radius: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.apresentacao-projetos__projetos-web__ilustracao__sitesIMG{
+    width: var(--largura-web);
+    height: var(--altura-web);
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+
+}
+.apresentacao-projetos__projetos-web__ilustracao__sitesMP4:hover{
+    transform: scale(1.2);
+}
+.apresentacao-projetos__projetos-mobile__ilustracao__appMP4{
+    width: var(--largura-mobile);
+    height: var(--altura-mobile);
+    display: none;
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    z-index: 0;
+    border-radius: 50px;
+    margin-top: 2vh;
+}
+
+.apresentacao-projetos__projetos-mobile__ilustracao__mobile-borda{
+    position: relative;
+    z-index: 2;
+}
+.linha-separadora-mobile{
+    height: 525px;
+    width: 2px;
+    background-color: #333;
+}
+
+.linha-separadora-web{
+    height: 283px;
+    width: 2px;
+    background-color: #333;
+}
+
+.apresentacao-tecnologia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacao-tecnologia__tecnologias{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.apresentacao-tecnologia__tecnologias__linha{
+    display: flex;
+    gap: 80px;
+    margin: 40px;
+}
+.apresentacao-tecnologia__tecnologias__linha__IMG{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
